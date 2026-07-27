@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .black {
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+
+</head>
+
+<body class="black">
+    <div>
+        <h1 class="heading" id="title">We are Learning DOM today <span style="display:none" one>text content</span></h1>
+
+        <h2>lorem ipsum line 1</h2>
+        <h2>lorem ipsum line 2</h2>
+        <h2>lorem ipsum line 3</h2>
+
+        <p>lorem ipsum</p>
+
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="items">one</li>
+            <li class="items">two</li>
+            <li class="items">three</li>
+            <li class="items">four</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    document.getElementById("title").id
+    document.getElementById("title").className
+    document.getElementById("title").getAttribute("class")
+    document.getElementById("title").setAttribute("class", "head")
+
+    const title = document.getElementById("title").id
+    title.syle.backgroundColor = "pink"
+    title.syle.padding = "15px"
+
+    title.innerHtml
+    title.innerText
+    title.textContent
+
+    document.querySelector("h2")
+    document.querySelector("#title")
+    document.querySelector(".title")
+    document.querySelector('input[type="password"]')
+
+    document.querySelector("p:first-child")
+
+    document.querySelector("ul")
+    document.querySelector("li")
+    const green = document.querySelector("li")
+    green.style.backgroundColor = "orange"
+    green.innerText = "five"
+
+    const myLiList = document.querySelectorAll("li")
+    myLiList[1].style.color = "pink"
+
+    myList = document.querySelectorAll("li")
+    myList.forEach(function(l) {
+        l.style.backgroundColor = "aqua"
+    })
+
+
+    document.getElementsByClassName("items")
+    const listItems = document.getElementsByClassName("items")
+    Array.from(listItems)
+    myArray = Array.from(listItems)
+    myArray.forEach(function(l) {
+        l.style.color = "orange"
+    })
+</script>
