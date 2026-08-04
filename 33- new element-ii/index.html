@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const divElement = document.createElement("div")
+    console.log(divElement)
+    divElement.className = "main"
+    divElement.id = Math.round(Math.random() * 10 + 1)
+
+    divElement.setAttribute("title", "generated title")
+    divElement.style.backgroundColor = "pink"
+    divElement.style.padding = "15px";
+    <!-- divElement.innerText = "faizan shabbir chauhan" -->
+
+    const text = document.createTextNode("faizan shabbir chauhan")
+    divElement.appendChild(text)
+
+    document.body.appendChild(divElement)
+</script>
+
+</html>
