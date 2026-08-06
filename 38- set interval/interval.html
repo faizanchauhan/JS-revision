@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+
+<body>
+    <h1>fayzan shabbir chauhan</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const changeText = function(str) {
+        console.log(str, 'faizan', Date.now())
+    }
+
+    const clear = setInterval(changeText, 1000, "hey")
+
+    clearInterval(clear)
+</script>
+
+</html>
